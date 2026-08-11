@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="348afe37834203109310ec80ceaad30e" label="Daily Task" max_length="40" name="x_1027974_dailyt_0_daily_task" type="collection">
+        <element choice="3" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not Yet Started" sequence="100" value="100"/>
+                <element inactive_on_update="false" label="Pending Review" sequence="0" value="Pending Review"/>
+                <element inactive_on_update="false" label="PENDING" sequence="0" value="PENDING"/>
+                <element inactive_on_update="false" label="Closed" sequence="400" value="400"/>
+                <element inactive_on_update="false" label="Deferred" sequence="0" value="Deferred"/>
+                <element inactive_on_update="false" label="Reopened" sequence="0" value="Reopened"/>
+                <element inactive_on_update="false" label="in progress" sequence="0" value="in progress"/>
+                <element inactive_on_update="false" label="In Progress" sequence="200" value="200"/>
+                <element inactive_on_update="false" label="Archived" sequence="0" value="Archived"/>
+                <element inactive_on_update="false" label="On Hold" sequence="300" value="300"/>
+                <element inactive_on_update="false" label="Completed" sequence="0" value="Completed"/>
+                <element inactive_on_update="false" label="Blocked" sequence="0" value="Blocked"/>
+            </choice>
+        </element>
+        <element label="Task" max_length="100" name="task" type="string"/>
+        <element label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
     </element>
 </database>
